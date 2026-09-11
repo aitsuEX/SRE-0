@@ -1,0 +1,9 @@
+import { isConfigured, INCIDENT_CONFIG } from '@/src/config/incident';
+export interface CommitEvidence { sha: string; message: string; author?: string; timestamp: string; branch?: string; changedFiles?: string[]; sourceUrl: string; }
+export async function checkGitHub(repoUrl = INCIDENT_CONFIG.githubRepoUrl, branch = process.env.INCIDENT_GITHUB_BRANCH || 'main'): Promise<{ status: 'SUCCESS'|'UNAVAILABLE'|'NOT_CONFIGURED'|'UNKNOWN'; repository: string; commits: CommitEvidence[]; checkedAt: string; sourceUrl: string; error?: string }> {
+  const checkedAt = new Date().toISOString(); if (!isConfigured(repoUrl)) return { status:'NOT_CONFIGURED', repository:'', commits:[], checkedAt, sourceUrl: repoUrl || '' };
+  const match = repoUrl.match(/github\.com\/([^/]+)\/([^/]+)/i); if (!match) return { status:'UNKNOWN', repository:repoUrl, commits:[], checkedAt, sourceUrl:repoUrl, error:'Invalid GitHub repository URL.' };
+  const [, owner, rawRepo] = match; const repo = rawRepo.replace(/\.git$/,'').replace(/\/$/,''); const api = `https://api.github.com/repos/${owner}/${repo}/commits?sha=${encodeURIComponent(branch)}&per_page=5`;
+  try { const r = await fetch(api, { headers:{Accept:'application/vnd.github+json','User-Agent':'SRE-Zero/1.0'} }); if (!r.ok) return {status:'UNAVAILABLE',repository:`${owner}/${repo}`,commits:[],checkedAt,sourceUrl:repoUrl,error:`GitHub returned HTTP ${r.status}`}; const data = await r.json() as Array<any>; return {status:'SUCCESS',repository:`${owner}/${repo}`,checkedAt,sourceUrl:repoUrl,commits:data.map(c=>({sha:c.sha,message:String(c.commit?.message||'').split('\n')[0],author:c.author?.login||c.commit?.author?.name,timestamp:c.commit?.author?.date||checkedAt,branch,sourceUrl:`https://github.com/${owner}/${repo}/commit/${c.sha}`}))}; }
+  catch(error){return {status:'UNAVAILABLE',repository:`${owner}/${repo}`,commits:[],checkedAt,sourceUrl:repoUrl,error:error instanceof Error?error.message:'Unknown error'};}
+}

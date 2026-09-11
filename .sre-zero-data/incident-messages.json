@@ -1,0 +1,148 @@
+{
+  "sre-ct56": [
+    {
+      "id": "msg-1789151975258-t7gb",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "SRE-Zero online.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:39:35.256Z"
+    },
+    {
+      "id": "msg-1789151994536-6qp3",
+      "channel": "SRE-CT56",
+      "senderUid": "9972718",
+      "senderName": "suddddddddd",
+      "senderRole": "Engineer",
+      "content": "What is the current",
+      "source": "CHAT_EVERYONE",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:39:54.535Z"
+    },
+    {
+      "id": "msg-1789152000997-xygl",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "The current status of your website is UP with an HTTP status of 200, and the response time was 1284 ms.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:40:00.995Z"
+    },
+    {
+      "id": "msg-1789152041300-5ooh",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:40:41.299Z"
+    },
+    {
+      "id": "msg-1789152077110-bun4",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:41:17.106Z"
+    },
+    {
+      "id": "msg-1789152112795-bv6x",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:41:52.794Z"
+    },
+    {
+      "id": "msg-1789152148860-wojw",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:42:28.859Z"
+    },
+    {
+      "id": "msg-1789152185140-2fnc",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:43:05.139Z"
+    },
+    {
+      "id": "msg-1789152223235-jyvi",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:43:43.234Z"
+    },
+    {
+      "id": "msg-1789152259157-5a51",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:44:19.157Z"
+    },
+    {
+      "id": "msg-1789152295420-m9se",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:44:55.417Z"
+    },
+    {
+      "id": "msg-1789152332335-jjl8",
+      "channel": "SRE-CT56",
+      "senderUid": "123456",
+      "senderName": "SRE-Zero",
+      "senderRole": "AI Incident Commander",
+      "content": "Understood.",
+      "source": "SRE-ZERO",
+      "scope": "EVERYONE",
+      "sharedToIncident": false,
+      "timestamp": "2026-09-11T18:45:32.332Z"
+    }
+  ]
+}
